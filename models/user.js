@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const UserSchema = new mongoose.Schema({
   name: String,
   email: String,
+  age: Number,
   phone: String,
   payment: Number,
   batch: { type: mongoose.Schema.Types.ObjectId, ref: "batches" },
